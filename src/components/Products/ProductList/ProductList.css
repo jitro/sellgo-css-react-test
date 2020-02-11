@@ -22,6 +22,7 @@
 
 .data-row td:first-of-type {
   min-width: 42px;
+  margin-top: 4px;
 }
 
 .data-row input[type=checkbox] {
