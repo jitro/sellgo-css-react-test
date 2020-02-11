@@ -1,0 +1,112 @@
+.data-row {
+  max-width: 1451px;  
+  border: .5px solid #707070;
+  border-radius: 11px;
+  height: 100px;
+  padding: 0 15px;
+  margin-bottom: 15px;
+}
+
+.data-row,
+.data-row .icon-box,
+.data-row .controls {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.data-row td {
+  font-size: 16px;
+  padding: 0 15px;
+}
+
+.data-row td:first-of-type {
+  min-width: 42px;
+}
+
+.data-row input[type=checkbox] {
+  width: 17px;
+  height: 17px;
+}
+
+.data-row .text-heading {
+  font-size: 14px;
+  width: 239px;
+  color: #5381DB;
+  margin-bottom: 7px;
+  font-weight: 500;
+}
+
+.data-row .text-code {
+  font-size: 14px;
+}
+
+.data-row .controls {
+  flex-direction: column;
+}
+
+.data-row .controls > *:not(:last-of-type) {
+  margin-bottom: 10px;
+}
+
+
+
+/* just for checkbox. hmmmmmmm */
+.checkbox {
+  position: relative;
+}
+
+.checkbox label {
+  position: relative;
+  min-height: 34px;
+  display: block;
+  cursor: pointer;
+}
+
+.checkbox label span {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.checkbox label:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  margin: 4px;
+  margin-left: 0;
+  width: 17px;
+  height: 17px;
+  transition: transform 0.28s ease;
+  border-radius: 3px;
+  border: 1px solid #D4D4D5;
+}
+
+.checkbox label:after {
+  content: "";
+  display: block;
+  width: 10px;
+  height: 5px;
+  border-bottom: 2px solid #fff;
+  border-left: 2px solid #fff;
+  transform: rotate(-45deg) scale(0);
+  transition: transform ease 0.25s;
+  position: absolute;
+  top: 9px;
+  left: 4px;
+}
+
+.checkbox input[type=checkbox] {
+  opacity: 0;
+  position: absolute;
+}
+
+.checkbox input[type=checkbox]:checked ~ label:before {
+  background: #313A4C;
+  color: #fff;
+}
+
+.checkbox input[type=checkbox]:checked ~ label:after {
+  transform: rotate(-45deg) scale(1);
+}
