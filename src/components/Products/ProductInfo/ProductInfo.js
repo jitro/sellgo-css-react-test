@@ -3,7 +3,7 @@ import React, {Fragment} from 'react'
 export default function ProductInfo({textHeading, textCode}) {
   return (
     <Fragment>
-      <td><img src="assets/media/image/Image37.png" alt="Icon" /></td>
+      <td><img src="/assets/media/image/Image37.png" alt="Icon" /></td>
       <td>
         <div>
           <div className="text-heading">{textHeading} …</div>
